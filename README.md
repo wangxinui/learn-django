@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Django 学习项目（mysite2）
 
 一个基于 **Django 4.2** 的入门学习项目，涵盖了 Django 核心知识点：**URL 路由、视图函数、模板语法、ORM 增删改查、表单提交、第三方 API 请求**等，并集成了 **MySQL** 数据库。
@@ -141,3 +142,6 @@ class Department(models.Model):
 ## 📄 License
 
 本项目仅用于学习交流，无 License 限制。
+=======
+# learn-django
+>>>>>>> 7cd80c2a82d555a53e878af7f918cd39d2615c9f
