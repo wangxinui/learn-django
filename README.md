@@ -142,6 +142,4 @@ class Department(models.Model):
 ## 📄 License
 
 本项目仅用于学习交流，无 License 限制。
-=======
-# learn-django
->>>>>>> 7cd80c2a82d555a53e878af7f918cd39d2615c9f
+
