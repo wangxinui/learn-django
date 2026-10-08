@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django模板语法学习</title>
+    <style>
+        body {
+            padding: 30px;
+            font-size: 18px;
+        }
+        .box {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1>模板语法的学习</h1>
+
+    <div class="box">
+        <p>字符串变量 n1：{{ n1 }}</p>
+    </div>
+
+    <div class="box">
+        <p>列表 n2：{{ n2 }}</p>
+        <p>列表取值 n2.0：{{ n2.0 }}</p>
+        <p>列表取值 n2.1：{{ n2.1 }}</p>
+        <p>列表取值 n2.2：{{ n2.2 }}</p>
+        <p>for循环遍历列表：
+            {% for item in n2 %}
+                <span>{{ item }} | </span>
+            {% endfor %}
+        </p>
+    </div>
+
+    <hr/>
+
+    <div class="box">
+        <p>字典n3原始：{{ n3 }}</p>
+        <p>字典取值name：{{ n3.name }}</p>
+        <p>字典取值salary：{{ n3.salary }}</p>
+        <p>字典取值role：{{ n3.role }}</p>
+    </div>
+
+    <div class="box">
+        <h3>员工列表（遍历n4，字典数组）</h3>
+        <ul>
+            {% for emp in n4 %}
+                <li>姓名：{{ emp.name }}，薪资：{{ emp.salary }}，岗位：{{ emp.role }}</li>
+            {% endfor %}
+        </ul>
+
+        {# if判断演示 #}
+        {% if n4 %}
+            <p>✅ 员工数据存在</p>
+        {% else %}
+            <p>❌ 暂无员工数据</p>
+        {% endif %}
+    </div>
+
+</body>
+</html>
