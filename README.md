@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# Django 学习项目（mysite2）
+# Django 学习项目
 
 一个基于 **Django 4.2** 的入门学习项目，涵盖了 Django 核心知识点：**URL 路由、视图函数、模板语法、ORM 增删改查、表单提交、第三方 API 请求**等，并集成了 **MySQL** 数据库。
 
